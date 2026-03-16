@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>   <link rel="icon" href="rosa.png" type="image/png">
+<head>
+  <link rel="icon" href="rosa.png" type="image/png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smart Flowers — Floricultura Boutique</title>
@@ -12,22 +13,22 @@
 </head>
 <body>
 
-  <!-- Stem Line -->
- 
+  <div class="stem-line" id="stemLine"></div>
 
-  <!-- Header -->
   <header class="header" id="header">
     <div class="container-smart header-inner">
       <a href="index.html" class="logo">Smart <em>Flowers</em></a>
-     <nav class="nav-desktop">
-  <a href="buques.html" class="nav-link">Buquês</a>
-  <a href="cestas.html" class="nav-link">Cestas</a>
-  <a href="ursinhos.html" class="nav-link">Ursinhos</a>
-</nav>
 
-<a href="https://wa.me/5500000000000" class="btn-primary btn-sm whatsapp-btn">
-  <span>WhatsApp</span><span class="arrow">→</span>
-</a>
+      <nav class="nav-desktop">
+        <a href="buques.html" class="nav-link">Buquês</a>
+        <a href="cestas.html" class="nav-link">Cestas</a>
+        <a href="ursinhos.html" class="nav-link">Ursinhos</a>
+      </nav>
+
+      <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm whatsapp-btn">
+        <span>WhatsApp</span><span class="arrow">→</span>
+      </a>
+
       <button class="menu-toggle" id="menuToggle" aria-label="Menu">
         <span class="hamburger" id="hamburgerIcon">☰</span>
       </button>
@@ -37,9 +38,7 @@
         <a href="buques.html" class="mobile-link">Buquês</a>
         <a href="cestas.html" class="mobile-link">Cestas</a>
         <a href="ursinhos.html" class="mobile-link">Ursinhos</a>
-        <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="btn-primary mobile-cta">
-          Falar com Florista →
-        </a>
+        <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="btn-primary mobile-cta">Falar com Florista →</a>
       </nav>
     </div>
   </header>
@@ -51,10 +50,13 @@
         <img src="rosa.png" alt="Rosa" />
       </div>
       <div class="hero-content" id="heroContent">
-        <p class="label-caps fade-in" style="animation-delay: 0.3s">Floricultura Boutique</p>
-        <h1 class="hero-title fade-in" style="animation-delay: 0.1s">Smart<br /><em>Flowers</em></h1>
-        <p class="hero-subtitle fade-in" style="animation-delay: 0.5s">Arranjos inteligentes para momentos que não esperam.</p>
-        <div class="hero-buttons fade-in" style="animation-delay: 0.7s">
+        <div class="hero-tag fade-in" style="animation-delay: 0.1s">
+          <span class="hero-tag-dot">🌸</span>
+          Floricultura Boutique
+        </div>
+        <h1 class="hero-title fade-in" style="animation-delay: 0.2s">Smart<br /><em>Flowers</em></h1>
+        <p class="hero-subtitle fade-in" style="animation-delay: 0.45s">Arranjos inteligentes para momentos que não esperam.</p>
+        <div class="hero-buttons fade-in" style="animation-delay: 0.65s">
           <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="btn-primary">
             <span>Falar com Florista</span><span class="arrow">→</span>
           </a>
@@ -71,7 +73,7 @@
         <p class="label-caps">Categorias</p>
         <h2 class="section-title">O que você <em>procura?</em></h2>
         <div class="categories-grid">
-          <a href="buques.html" class="category-card">
+          <a href="buques.html" class="category-card reveal">
             <div class="card-surface aspect-3-4">
               <img src="images/bouquet-1.png" alt="Buquês" />
               <div class="card-overlay"></div>
@@ -81,7 +83,7 @@
               <p>Composições florais artesanais</p>
             </div>
           </a>
-          <a href="cestas.html" class="category-card">
+          <a href="cestas.html" class="category-card reveal">
             <div class="card-surface aspect-3-4">
               <img src="images/cesta-1.png" alt="Cestas" />
               <div class="card-overlay"></div>
@@ -91,7 +93,7 @@
               <p>Presentes completos e sofisticados</p>
             </div>
           </a>
-          <a href="ursinhos.html" class="category-card">
+          <a href="ursinhos.html" class="category-card reveal">
             <div class="card-surface aspect-3-4">
               <img src="images/urso-1.png" alt="Ursinhos" />
               <div class="card-overlay"></div>
@@ -106,25 +108,29 @@
     </section>
 
     <!-- Highlights Horizontal Scroll -->
-    <section class="section-padding overflow-hidden">
+    <section class="section-padding overflow-hidden" style="padding-bottom: 24px;">
       <div class="container-smart">
         <p class="label-caps">Destaques</p>
         <h2 class="section-title">Mais <em>pedidos</em></h2>
       </div>
+      <div class="scroll-hint">
+        <span class="scroll-hint-line"></span>
+        Deslize para ver
+      </div>
       <div class="horizontal-scroll" id="horizontalScroll">
-        <div class="scroll-item">
+        <div class="scroll-item reveal">
           <div class="card-surface aspect-3-4"><img src="images/bouquet-2.png" alt="Rosas Clássicas" /></div>
           <div class="card-info"><h3>Rosas Clássicas</h3><p>R$ 189</p></div>
         </div>
-        <div class="scroll-item">
+        <div class="scroll-item reveal">
           <div class="card-surface aspect-3-4"><img src="images/bouquet-3.png" alt="Girassóis Alegria" /></div>
           <div class="card-info"><h3>Girassóis Alegria</h3><p>R$ 149</p></div>
         </div>
-        <div class="scroll-item">
+        <div class="scroll-item reveal">
           <div class="card-surface aspect-3-4"><img src="images/cesta-1.png" alt="Cesta Premium" /></div>
           <div class="card-info"><h3>Cesta Premium</h3><p>R$ 329</p></div>
         </div>
-        <div class="scroll-item">
+        <div class="scroll-item reveal">
           <div class="card-surface aspect-3-4"><img src="images/urso-1.png" alt="Urso Romântico" /></div>
           <div class="card-info"><h3>Urso Romântico</h3><p>R$ 119</p></div>
         </div>
@@ -132,25 +138,27 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="section-padding overflow-hidden">
-      <div class="container-smart cta-wrapper">
-        <img src="rosa.png" alt="" class="cta-rose" />
-        <div class="cta-content">
-          <h2 class="cta-title">Surpreenda <em>alguém</em> agora.</h2>
-          <div class="hero-buttons">
-            <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="btn-primary">
-              <span>Falar com Florista</span><span class="arrow">→</span>
-            </a>
-            <a href="https://www.ifood.com.br" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-              Pedir no iFood <span class="arrow-diagonal">↑</span>
-            </a>
+    <section class="section-padding">
+      <div class="container-smart">
+        <div class="cta-wrapper">
+          <img src="rosa.png" alt="" class="cta-rose" />
+          <div class="cta-content">
+            <p class="label-caps">Entrega rápida</p>
+            <h2 class="cta-title">Surpreenda <em>alguém</em> agora.</h2>
+            <div class="hero-buttons">
+              <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                <span>Falar com Florista</span><span class="arrow">→</span>
+              </a>
+              <a href="https://www.ifood.com.br" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                Pedir no iFood <span class="arrow-diagonal">↑</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container-smart">
       <div class="footer-grid">
@@ -172,9 +180,20 @@
       </div>
       <div class="footer-bottom">
         <span>© 2026 Smart Flowers</span>
+        <span>Floricultura Boutique</span>
       </div>
     </div>
   </footer>
+
+  <!-- Mobile Bottom CTA Bar -->
+  <div class="mobile-bottom-bar">
+    <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="btn-wa">
+      WhatsApp →
+    </a>
+    <a href="https://www.ifood.com.br" target="_blank" rel="noopener noreferrer" class="btn-if">
+      iFood ↗
+    </a>
+  </div>
 
   <script src="script.js"></script>
 </body>
