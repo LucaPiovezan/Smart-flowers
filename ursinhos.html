@@ -10,27 +10,25 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  
+
   <header class="header" id="header">
-  <div class="container-smart header-inner">
+    <div class="container-smart header-inner">
+      <a href="index.html" class="logo">Smart <em>Flowers</em></a>
 
-    <a href="index.html" class="logo">Smart <em>Flowers</em></a>
+      <nav class="nav-desktop">
+        <a href="buques.html" class="nav-link">Buquês</a>
+        <a href="cestas.html" class="nav-link">Cestas</a>
+        <a href="ursinhos.html" class="nav-link active">Ursinhos</a>
+      </nav>
 
-    <nav class="nav-desktop">
-      <a href="buques.html" class="nav-link">Buquês</a>
-      <a href="cestas.html" class="nav-link">Cestas</a>
-      <a href="ursinhos.html" class="nav-link">Ursinhos</a>
-    </nav>
+      <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm whatsapp-btn">
+        <span>WhatsApp</span><span class="arrow">→</span>
+      </a>
 
-    <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm whatsapp-btn">
-      <span>WhatsApp</span><span class="arrow">→</span>
-    </a>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
-      <span class="hamburger" id="hamburgerIcon">☰</span>
-    </button>
-
-  </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span class="hamburger" id="hamburgerIcon">☰</span>
+      </button>
+    </div>
     <div class="nav-mobile" id="mobileMenu">
       <nav class="container-smart mobile-nav-inner">
         <a href="buques.html" class="mobile-link">Buquês</a>
@@ -43,18 +41,81 @@
 
   <main class="product-page">
     <div class="container-smart section-padding">
+
+      <div class="product-hero-bar">
+        <a href="index.html" class="back-link">← Início</a>
+      </div>
+
       <p class="label-caps fade-in">Pelúcias para momentos especiais</p>
       <h1 class="page-title fade-in">Ursinhos</h1>
-      
+
       <div class="products-grid">
-        <div class="product-card reveal"><div class="card-surface aspect-3-4"><img src="images/urso-1.png" alt="Urso Romântico" /></div><div class="product-info"><div><h3>Urso Romântico</h3><p>R$ 119</p></div><span class="card-arrow">↗</span></div></div>
-        <div class="product-card reveal"><div class="card-surface aspect-3-4"><img src="images/urso-1.png" alt="Urso Grande" /></div><div class="product-info"><div><h3>Urso Grande</h3><p>R$ 169</p></div><span class="card-arrow">↗</span></div></div>
-        <div class="product-card reveal"><div class="card-surface aspect-3-4"><img src="images/urso-1.png" alt="Urso com Buquê" /></div><div class="product-info"><div><h3>Urso com Buquê</h3><p>R$ 199</p></div><span class="card-arrow">↗</span></div></div>
-        <div class="product-card reveal"><div class="card-surface aspect-3-4"><img src="images/urso-1.png" alt="Urso Fofo" /></div><div class="product-info"><div><h3>Urso Fofo</h3><p>R$ 89</p></div><span class="card-arrow">↗</span></div></div>
+
+        <div class="product-card reveal">
+          <div class="card-surface aspect-3-4">
+            <img src="images/urso-1.png" alt="Urso Romântico" />
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Urso Romântico</h3>
+              <p class="price-text">R$ 119</p>
+              <span class="price-badge">R$ 119</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="card-surface aspect-3-4">
+            <img src="images/urso-1.png" alt="Urso Grande" />
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Urso Grande</h3>
+              <p class="price-text">R$ 169</p>
+              <span class="price-badge">R$ 169</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="card-surface aspect-3-4">
+            <img src="images/urso-1.png" alt="Urso com Buquê" />
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Urso com Buquê</h3>
+              <p class="price-text">R$ 199</p>
+              <span class="price-badge">R$ 199</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="card-surface aspect-3-4">
+            <img src="images/urso-1.png" alt="Urso Fofo" />
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Urso Fofo</h3>
+              <p class="price-text">R$ 89</p>
+              <span class="price-badge">R$ 89</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </div>
+
       </div>
+
       <div class="hero-buttons" style="margin-top: 4rem">
-        <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="btn-primary"><span>Encomendar via WhatsApp</span><span class="arrow">→</span></a>
-        <a href="https://www.ifood.com.br" target="_blank" rel="noopener noreferrer" class="btn-secondary">Pedir no iFood <span class="arrow-diagonal">↑</span></a>
+        <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <span>Encomendar via WhatsApp</span><span class="arrow">→</span>
+        </a>
+        <a href="https://www.ifood.com.br" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+          Pedir no iFood <span class="arrow-diagonal">↑</span>
+        </a>
       </div>
     </div>
   </main>
@@ -62,13 +123,39 @@
   <footer class="footer">
     <div class="container-smart">
       <div class="footer-grid">
-        <div><h3 class="logo footer-logo">Smart <em>Flowers</em></h3><p class="footer-desc">Arranjos inteligentes para momentos que não esperam.</p></div>
-        <div><h4 class="label-caps footer-heading">Navegação</h4><a href="buques.html" class="footer-link">Buquês</a><a href="cestas.html" class="footer-link">Cestas</a><a href="ursinhos.html" class="footer-link">Ursinhos</a></div>
-        <div><h4 class="label-caps footer-heading">Peça Agora</h4><a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="footer-link">WhatsApp ↗</a><a href="https://www.ifood.com.br" target="_blank" rel="noopener noreferrer" class="footer-link">Pedir no iFood ↗</a></div>
+        <div>
+          <h3 class="logo footer-logo">Smart <em>Flowers</em></h3>
+          <p class="footer-desc">Arranjos inteligentes para momentos que não esperam.</p>
+        </div>
+        <div>
+          <h4 class="label-caps footer-heading">Navegação</h4>
+          <a href="buques.html" class="footer-link">Buquês</a>
+          <a href="cestas.html" class="footer-link">Cestas</a>
+          <a href="ursinhos.html" class="footer-link">Ursinhos</a>
+        </div>
+        <div>
+          <h4 class="label-caps footer-heading">Peça Agora</h4>
+          <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="footer-link">WhatsApp ↗</a>
+          <a href="https://www.ifood.com.br" target="_blank" rel="noopener noreferrer" class="footer-link">Pedir no iFood ↗</a>
+        </div>
       </div>
-      <div class="footer-bottom"><span>© 2026 Smart Flowers</span></div>
+      <div class="footer-bottom">
+        <span>© 2026 Smart Flowers</span>
+        <span>Floricultura Boutique</span>
+      </div>
     </div>
   </footer>
+
+  <!-- Mobile Bottom CTA Bar -->
+  <div class="mobile-bottom-bar">
+    <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="btn-wa">
+      WhatsApp →
+    </a>
+    <a href="https://www.ifood.com.br" target="_blank" rel="noopener noreferrer" class="btn-if">
+      iFood ↗
+    </a>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
